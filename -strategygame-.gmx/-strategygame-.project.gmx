@@ -7,6 +7,25 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_globals</sprite>
+    <sprite>sprites\spr_text</sprite>
+    <sprite>sprites\spr_mouse</sprite>
+    <sprite>sprites\selecter</sprite>
+    <sprites name="units">
+      <sprite>sprites\spr_unit1</sprite>
+      <sprite>sprites\spr_unit2</sprite>
+      <sprite>sprites\spr_unit3</sprite>
+      <sprite>sprites\spr_unit4</sprite>
+      <sprite>sprites\spr_unit5</sprite>
+      <sprite>sprites\spr_unit6</sprite>
+    </sprites>
+    <sprites name="buildings">
+      <sprite>sprites\spr_building1</sprite>
+      <sprite>sprites\spr_building2</sprite>
+      <sprite>sprites\spr_buildign3</sprite>
+      <sprite>sprites\spr_building4</sprite>
+      <sprite>sprites\spr_building5</sprite>
+      <sprite>sprites\spr_building6</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -19,6 +38,9 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_globals</object>
+    <object>objects\obj_menu_text</object>
+    <object>objects\obj_mouse</object>
+    <object>objects\obj_selecter</object>
   </objects>
   <rooms name="rooms">
     <rooms name="menu">
@@ -30,8 +52,8 @@
     <room>rooms\rm_test</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">0</constant>
-    <constant name="GM_version">0</constant>
+    <constant name="GM_build_date">41883.5247332176</constant>
+    <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
