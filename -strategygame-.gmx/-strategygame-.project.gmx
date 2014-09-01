@@ -5,10 +5,28 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_globals</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\fnt_title</font>
+    <font>fonts\fnt_heading1</font>
+    <font>fonts\fnt_heading_2</font>
+    <font>fonts\fnt_regular</font>
+    <font>fonts\fnt_special</font>
+  </fonts>
+  <objects name="objects">
+    <object>objects\obj_globals</object>
+  </objects>
   <rooms name="rooms">
+    <rooms name="menu">
+      <room>rooms\rm_mainmenu</room>
+      <room>rooms\rm_help</room>
+      <room>rooms\rm_levelselect</room>
+      <room>rooms\rm_options</room>
+    </rooms>
     <room>rooms\rm_test</room>
   </rooms>
   <constants number="2">
