@@ -9,7 +9,17 @@
     <sprite>sprites\spr_globals</sprite>
     <sprite>sprites\spr_text</sprite>
     <sprite>sprites\spr_mouse</sprite>
+    <sprite>sprites\spr_view</sprite>
     <sprite>sprites\selecter</sprite>
+    <sprites name="nature">
+      <sprite>sprites\spr_tree1</sprite>
+      <sprite>sprites\spr_tree2</sprite>
+      <sprite>sprites\spr_tree3</sprite>
+      <sprite>sprites\spr_rock1</sprite>
+      <sprite>sprites\spr_rock2</sprite>
+      <sprite>sprites\spr_grass1</sprite>
+      <sprite>sprites\spr_grass2</sprite>
+    </sprites>
     <sprites name="units">
       <sprite>sprites\spr_unit1</sprite>
       <sprite>sprites\spr_unit2</sprite>
@@ -29,6 +39,9 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_move_view.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_title</font>
     <font>fonts\fnt_heading1</font>
@@ -39,8 +52,34 @@
   <objects name="objects">
     <object>objects\obj_globals</object>
     <object>objects\obj_menu_text</object>
-    <object>objects\obj_mouse</object>
     <object>objects\obj_selecter</object>
+    <object>objects\obj_mouse</object>
+    <objects name="buildings">
+      <object>objects\obj_building1</object>
+      <object>objects\obj_building2</object>
+      <object>objects\obj_building3</object>
+      <object>objects\obj_building4</object>
+      <object>objects\obj_building5</object>
+      <object>objects\obj_building6</object>
+    </objects>
+    <objects name="units">
+      <object>objects\obj_unit1</object>
+      <object>objects\obj_unit2</object>
+      <object>objects\obj_unit3</object>
+      <object>objects\obj_unit4</object>
+      <object>objects\obj_unit5</object>
+      <object>objects\obj_unit6</object>
+    </objects>
+    <objects name="nature">
+      <object>objects\obj_tree1</object>
+      <object>objects\obj_tree2</object>
+      <object>objects\obj_tree3</object>
+      <object>objects\obj_rock1</object>
+      <object>objects\obj_rock2</object>
+      <object>objects\obj_grass1</object>
+      <object>objects\obj_grass2</object>
+    </objects>
+    <object>objects\obj_view</object>
   </objects>
   <rooms name="rooms">
     <rooms name="menu">
@@ -52,7 +91,7 @@
     <room>rooms\rm_test</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41883.5247332176</constant>
+    <constant name="GM_build_date">41883.5985317824</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>
