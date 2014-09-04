@@ -9,17 +9,17 @@ var movecamdown = keyboard_check(vk_down) || keyboard_check(ord("S"))
 //move
 
 if (movecamright) {
-    view_xview[0] += 4
+    view_xview[0] += 5
 }
 
 if (movecamleft) {
-    view_xview[0] -= 4
+    view_xview[0] -= 5
 }
 
 if (movecamup) {
-    view_yview[0] -= 4
+    view_yview[0] -= 5
 }
 
 if (movecamdown) {
-    view_yview[0] += 4
+    view_yview[0] += 5
 }
