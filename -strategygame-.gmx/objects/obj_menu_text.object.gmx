@@ -29,8 +29,8 @@
 draw_set_font(fnt_title);
 draw_text (x,y,"STRATEGY GAME")
 draw_set_font(fnt_regular)
-draw_text(x+65,y+96,"PLAY")
-draw_text(x+65,y+96+50,"LEVELS")
+draw_text(x+65,y+96,"NEW GAME")
+draw_text(x+65,y+96+50,"LOAD GAME")
 draw_text(x+65,y+96+100,"OPTIONS")
 draw_text(x+65,y+96+150,"HELP")
 draw_text(x+65,y+96+200,"QUIT")
@@ -52,6 +52,10 @@ draw_set_font(fnt_title);
 draw_text(x,y, "OPTIONS")
 }
 
+if room = rm_load {
+draw_set_font (fnt_title)
+draw_text (x,y,"LOAD GAME")
+}
 </string>
           </argument>
         </arguments>
