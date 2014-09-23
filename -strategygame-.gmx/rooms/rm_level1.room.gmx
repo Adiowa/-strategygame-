@@ -183,8 +183,6 @@
     <instance objName="obj_kepler_tower" x="1280" y="384" name="inst_DD4C4F4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_kepler_barrack" x="1216" y="384" name="inst_9A5976C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_kepler_hub" x="1344" y="384" name="inst_1AEBAFC1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tech_tree_terran" x="640" y="1184" name="inst_40D6677A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mouse" x="256" y="192" name="inst_CDD01B8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
