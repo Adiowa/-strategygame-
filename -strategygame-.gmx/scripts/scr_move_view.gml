@@ -10,22 +10,22 @@ var movecamdown = keyboard_check(vk_down) || keyboard_check(ord("S"))
 
 //move
 if (movecamright) {
-    view_xview[0] += 4
+    view_xview[0] += 10
 }
 
 if (movecamleft) {
-    view_xview[0] -= 4
+    view_xview[0] -= 10
 }
 
 if (movecamup) {
-    view_yview[0] -= 4
+    view_yview[0] -= 10
 }
 
 if (movecamdown) {
-    view_yview[0] += 4
+    view_yview[0] += 10
 }
 //Create:
-view_pan_speed=5
+view_pan_speed=10
 //Step:
 if mouse_x<=view_xview
 view_xview-=view_pan_speed
