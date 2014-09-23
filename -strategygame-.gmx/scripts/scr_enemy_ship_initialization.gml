@@ -12,6 +12,6 @@ acceleration = .5;
 
 mouseover = false;
 
-enemy = false;
+enemy = true;
 
 

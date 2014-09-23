@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///initialize tha ship!
 
-scr_ship_initialization();
+scr_enemy_ship_initialization();
 </string>
           </argument>
         </arguments>
@@ -64,17 +64,15 @@ image_angle = direction;
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="obj_mouse">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
+        <id>101</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_move</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
@@ -82,8 +80,11 @@ image_angle = direction;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>mouseover = true;
-</string>
+            <string>000100000</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
           </argument>
         </arguments>
       </action>
@@ -122,36 +123,6 @@ if (x == other.x &amp;&amp; y == other.y) {
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="56">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///select the ship
-
-if (instance_exists(obj_mouse)) {
-    scr_toggle_select(obj_mouse.press_x, obj_mouse.press_y, mouse_x, mouse_y)
-    if(mouseover == true){
-        selected = true;
-    }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="6" enumb="54">
       <action>
         <libid>1</libid>
@@ -169,23 +140,61 @@ if (instance_exists(obj_mouse)) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///create the target and change to move state
-
-//make sure there is no other target
-if (target != -1 &amp;&amp; instance_exists(target)) {
+            <string>
+if(mouseover == true &amp;&amp; enemy == true){
+    if (target != -1 &amp;&amp; instance_exists(target)) {
     with (target) instance_destroy();
-}
-
-target = instance_create(mouse_x, mouse_y, obj_target);
-
-if(selected){
-    state = 'move';
-}else{
-    if(mouseover == true &amp;&amp; enemy == true){
-        target = instance_create(self.x,self.y, obj_target);
     }
+    
+    target = instance_create(self.x,self.y, obj_target);
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>mouseover = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>mouseover = true;
 </string>
           </argument>
         </arguments>

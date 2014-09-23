@@ -10,6 +10,13 @@ var press_y = argument1;
 var release_x = argument2;
 var release_y = argument3;
 
+if(press_x == release_x && press_y == release_y){
+    if position_meeting(press_x,press_y,self){
+        selected = true;
+    }else{
+        selected = false;
+    }
+}
 // case, drag instances
 
 var TopLeftBottomRight = (x > press_x && x < release_x && y > press_y && y < release_y);

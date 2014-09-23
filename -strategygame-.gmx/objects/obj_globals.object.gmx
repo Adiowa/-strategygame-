@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>win = 0
 lose = 0
+playerKep = false;
+playerTerr = false;
 </string>
           </argument>
         </arguments>
