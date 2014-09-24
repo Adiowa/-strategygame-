@@ -122,8 +122,6 @@ if (instance_exists(obj_mouse)) {
     scr_toggle_select(obj_mouse.press_x, obj_mouse.press_y, mouse_x, mouse_y)
     if(mouseover == true){
         selected = true;
-    }else{
-        selected = false;
     }
 }
 </string>
