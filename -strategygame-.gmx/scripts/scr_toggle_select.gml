@@ -10,6 +10,7 @@ var press_y = argument1;
 var release_x = argument2;
 var release_y = argument3;
 
+//select unit by clicking on it
 if(press_x == release_x && press_y == release_y){
     if position_meeting(press_x,press_y,self){
         selected = true;

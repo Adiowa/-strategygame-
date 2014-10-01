@@ -14,4 +14,6 @@ mouseover = false;
 
 enemy = false;
 
+foe = -1;
+
 

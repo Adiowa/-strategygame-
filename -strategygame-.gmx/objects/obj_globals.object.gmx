@@ -34,6 +34,7 @@ instance_create (x, y, obj_tech_tree_terran);
 instance_create (x, y, obj_esc_menu);
 instance_create (x, y, obj_exitbutton);
 instance_create (x, y, obj_gui_base);
+instance_create (x, y, obj_view);
 
 //variables
 win = 0

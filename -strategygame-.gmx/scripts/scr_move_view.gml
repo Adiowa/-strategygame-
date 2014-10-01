@@ -24,6 +24,7 @@ if (movecamup) {
 if (movecamdown) {
     view_yview[0] += 10
 }
+
 //Create:
 view_pan_speed=10
 //Step:

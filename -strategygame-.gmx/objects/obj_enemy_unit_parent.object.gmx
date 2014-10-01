@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_unit_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -27,7 +27,12 @@
             <kind>1</kind>
             <string>///initialize tha ship!
 
-scr_enemy_ship_initialization();
+scr_ship_initialization();
+
+if (instance_exists(obj_player_unit_parent)) {
+    foe = instance_nearest(x, y, obj_player_unit_parent);
+    //assign foe state to units owned by player unit parent
+}
 </string>
           </argument>
         </arguments>
@@ -52,10 +57,17 @@ scr_enemy_ship_initialization();
             <kind>1</kind>
             <string>///control the states!
 
-if (state == 'move') {
-    scr_ship_move();
+if (instance_exists(obj_player_unit_parent)) {
+    foe = instance_nearest(x, y, obj_player_unit_parent);
+    //assign foe state to units owned by player unit parent
+}
+
+if (state == 'chase') {
+    scr_enemy_unit_chase();
+} else if (state == 'attack') {
+    scr_enemy_unit_attack();
 } else if (state == 'idle') {
-    scr_ship_idle();
+    scr_enemy_unit_idle();
 }
 
 //unit will face direction it's moving
@@ -64,32 +76,8 @@ image_angle = direction;
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>101</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_move</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>000100000</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
-    <event eventtype="4" ename="obj_unit_parent">
+    <event eventtype="6" enumb="56">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -106,49 +94,14 @@ image_angle = direction;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///collision code
+            <string>///select the ship
 
-motion_add(point_direction(other.x, other.y, x, y), .5);
-
-//check to see if units would be stuck, if so add motion to highest id
-if (x == other.x &amp;&amp; y == other.y) {
-    if (id &gt; other.id) {
-        x +=.5;
-    } else {
-        x -=.5;
+if (instance_exists(obj_mouse)) {
+    scr_toggle_select(obj_mouse.press_x, obj_mouse.press_y, mouse_x, mouse_y)
+    if(mouseover == true){
+        selected = true;
     }
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="54">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>
-if(mouseover == true &amp;&amp; enemy == true){
-    if (target != -1 &amp;&amp; instance_exists(target)) {
-    with (target) instance_destroy();
-    }
-    
-    target = instance_create(self.x,self.y, obj_target);
-}
-
 </string>
           </argument>
         </arguments>
@@ -172,6 +125,8 @@ if(mouseover == true &amp;&amp; enemy == true){
           <argument>
             <kind>1</kind>
             <string>mouseover = false;
+
+// are enter and leave supposed to be in master parent instead?
 </string>
           </argument>
         </arguments>
@@ -195,6 +150,8 @@ if(mouseover == true &amp;&amp; enemy == true){
           <argument>
             <kind>1</kind>
             <string>mouseover = true;
+
+// are enter and leave supposed to be in master parent instead?
 </string>
           </argument>
         </arguments>
@@ -217,13 +174,13 @@ if(mouseover == true &amp;&amp; enemy == true){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// draw selected
+            <string>/// draw selected
 
 if (selected) {
     draw_set_alpha (.25);
-    draw_circle_color(x, y, 32, c_lime, c_lime, true)
+    draw_circle_color(x, y, 32, c_red, c_red, true);
     draw_set_alpha(.1);
-    draw_circle_color(x,y, 32, c_lime, c_lime, false)
+    draw_circle_color(x,y, 32, c_red, c_red, false);
     draw_set_alpha (1);
 }
 
