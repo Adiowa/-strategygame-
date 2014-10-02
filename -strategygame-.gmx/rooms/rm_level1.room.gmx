@@ -156,6 +156,11 @@
     <instance objName="obj_kepler_ground" x="1440" y="864" name="inst_9F0E7628" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_kepler_ground" x="1344" y="608" name="inst_5E60F0A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_kepler_ground" x="1696" y="1248" name="inst_9FAEB722" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_levelend_straight" x="0" y="192" name="inst_ABE65E47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_levelend_corner" x="64" y="64" name="inst_984C7AB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_terran_barrack" x="800" y="672" name="inst_57B33FBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_pause_unpause" x="960" y="672" name="inst_8EB8B0F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_countup_controller" x="896" y="672" name="inst_FAFE75D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

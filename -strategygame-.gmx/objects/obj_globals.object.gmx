@@ -33,6 +33,7 @@ instance_create (x, y, obj_tech_tree_kepler);
 instance_create (x, y, obj_tech_tree_terran);
 instance_create (x, y, obj_esc_menu);
 instance_create (x, y, obj_exitbutton);
+instance_create (x, y, obj_menubutton);
 instance_create (x, y, obj_gui_base);
 instance_create (x, y, obj_view);
 
@@ -42,7 +43,8 @@ lose = 0
 talenttree = false;
 escmenu = false;
 playlevel = false;
-
+buildingselect = false;
+zoom_factor = 1;
 </string>
           </argument>
         </arguments>
@@ -72,6 +74,22 @@ if playlevel = true then {
 } else if playlevel = false then {
     obj_gui_base.visible = false;
 }
+
+
+//silly code
+if (keyboard_check(vk_add))
+{
+    zoom_factor -= 0.01;
+}
+else 
+if (keyboard_check(vk_subtract))
+{
+    zoom_factor += 0.01
+}
+
+
+view_wview[0] = 1920 * (zoom_factor);
+view_hview[0] = 1080 * (zoom_factor);
 </string>
           </argument>
         </arguments>
@@ -198,7 +216,6 @@ if playlevel == true then {
     obj_esc_menu.visible = false
     escmenu = false
 }
-
 
 </string>
           </argument>

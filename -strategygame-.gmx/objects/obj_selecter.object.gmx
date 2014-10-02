@@ -100,6 +100,7 @@ y = 200+200
 // When Z is pressed
 if keyboard_check_pressed(ord("Z")) &amp;&amp; select = 1 {
     room_goto (rm_level1)
+    playlevel = true;
 }
 
 if keyboard_check_pressed(ord("Z")) &amp;&amp; select = 2 {
@@ -120,7 +121,8 @@ if keyboard_check_pressed(ord("Z")) &amp;&amp; select = 5 {
 
 // When space is pressed
 if keyboard_check_pressed(vk_space) &amp;&amp; select = 1 {
-    room_goto (rm_test)
+    room_goto (rm_level1)
+    playlevel = true;
 }
 
 if keyboard_check_pressed(vk_space) &amp;&amp; select = 2 {
@@ -139,9 +141,10 @@ if keyboard_check_pressed(vk_space) &amp;&amp; select = 5 {
     game_end();
 }
 
-// When space is pressed
+// When enter is pressed
 if keyboard_check_pressed(vk_enter) &amp;&amp; select = 1 {
-    room_goto (rm_test)
+    room_goto (rm_level1)
+    playlevel = true;
 }
 
 if keyboard_check_pressed(vk_enter) &amp;&amp; select = 2 {
