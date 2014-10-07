@@ -155,7 +155,6 @@ press_y = mouse_y;
           <argument>
             <kind>1</kind>
             <string>//draw self and draw selection box
-
 if (press_x != -1 &amp;&amp; press_y != -1) {
     draw_set_alpha (.25);
     draw_rectangle_color(press_x, press_y, mouse_x, mouse_y, c_lime, c_lime, c_lime, c_lime, true);
@@ -164,7 +163,6 @@ if (press_x != -1 &amp;&amp; press_y != -1) {
     draw_set_alpha(1);
 
 }
-
 draw_self();
 </string>
           </argument>

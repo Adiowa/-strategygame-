@@ -29,13 +29,17 @@
 
 //initialize global objects
 instance_create (x, y, obj_mouse);
-instance_create (x, y, obj_tech_tree_kepler);
-instance_create (x, y, obj_tech_tree_terran);
-instance_create (x, y, obj_esc_menu);
-instance_create (x, y, obj_exitbutton);
-instance_create (x, y, obj_menubutton);
 instance_create (x, y, obj_gui_base);
-instance_create (x, y, obj_view);
+if room == (rm_level1) {
+   instance_create (x, y, obj_button_pause_unpause)
+   instance_create (x, y, obj_countup_controller) 
+   instance_create (x, y, obj_view);
+   instance_create (x, y, obj_esc_menu);
+   instance_create (x, y, obj_exitbutton);
+   instance_create (x, y, obj_menubutton);
+   instance_create (x, y, obj_tech_tree_kepler);
+   instance_create (x, y, obj_tech_tree_terran);
+}
 
 //variables
 win = 0
