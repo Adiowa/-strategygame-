@@ -40,7 +40,6 @@ if room == (rm_level1) {
    instance_create (x, y, obj_tech_tree_kepler);
    instance_create (x, y, obj_tech_tree_terran);
 }
-
 //variables
 win = 0
 lose = 0
@@ -48,7 +47,12 @@ talenttree = false;
 escmenu = false;
 playlevel = false;
 buildingselect = false;
+//gimmick, press + and -
 zoom_factor = 1;
+//resources
+player_blob = 0;
+enemy_blob = 0;
+
 </string>
           </argument>
         </arguments>
@@ -94,6 +98,29 @@ if (keyboard_check(vk_subtract))
 
 view_wview[0] = 1920 * (zoom_factor);
 view_hview[0] = 1080 * (zoom_factor);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///give resources every frame
+player_blob += 1/room_speed
+enemy_blob += 1/room_speed
 </string>
           </argument>
         </arguments>

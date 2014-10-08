@@ -13,7 +13,6 @@
   <code></code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
-  <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>0</isSet>
     <w>0</w>
@@ -224,7 +223,7 @@
     <instance objName="obj_tree_big" x="2720" y="160" name="inst_22F572CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_big" x="2465" y="49" name="inst_38A5C556" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_big" x="2550" y="48" name="inst_2F33E3F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tree_big" x="2625" y="11" name="inst_4879F593" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_big" x="2624" y="32" name="inst_4879F593" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_big" x="2738" y="24" name="inst_EF14121A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_big" x="2795" y="59" name="inst_6D658859" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_big" x="2762" y="147" name="inst_8CF2618F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -440,7 +439,60 @@
     <instance objName="obj_tree_big" x="1269" y="73" name="inst_ED1A154B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_big" x="1351" y="103" name="inst_2F4AD188" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_big" x="1462" y="34" name="inst_13807F88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tree_big" x="1628" y="32" name="inst_D5521858" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_big" x="1632" y="64" name="inst_D5521858" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_levelend_straight" x="320" y="0" name="inst_E47935AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="448" y="0" name="inst_7AD96D65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="576" y="0" name="inst_F1DCBACA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="704" y="0" name="inst_498E3A20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="576" y="0" name="inst_9B8874AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="832" y="0" name="inst_2EF9A8B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="576" y="0" name="inst_77B227A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="960" y="0" name="inst_55BF9642" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="576" y="0" name="inst_14BB66A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="1088" y="0" name="inst_576B379E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="576" y="0" name="inst_9D7138FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="576" y="0" name="inst_8923D768" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="1216" y="0" name="inst_8F61F9B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="576" y="0" name="inst_05507B6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="1344" y="0" name="inst_D01CB9E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="576" y="0" name="inst_16186BA0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="1472" y="0" name="inst_89BA6FA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="576" y="0" name="inst_03FBFDAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="1600" y="0" name="inst_2D56D363" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="576" y="0" name="inst_CF84D3AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="1728" y="0" name="inst_AA1D413E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="576" y="0" name="inst_BDC303A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="1856" y="0" name="inst_43B31B1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="576" y="0" name="inst_AB42FE73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="1984" y="0" name="inst_D5F1F16B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="576" y="0" name="inst_AE9179BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="2112" y="0" name="inst_232E933F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="576" y="0" name="inst_4D098EE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="2240" y="0" name="inst_01442349" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="576" y="0" name="inst_602E1517" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="2368" y="0" name="inst_9EAB72F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="576" y="0" name="inst_AF231EB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="2496" y="0" name="inst_5285BB45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="576" y="0" name="inst_A0A4BF65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="2624" y="0" name="inst_79B1912C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="576" y="0" name="inst_729D4A64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="2752" y="0" name="inst_C343EDC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="576" y="0" name="inst_EF213B4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_straight" x="576" y="0" name="inst_FAAC898A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_corner" x="2944" y="64" name="inst_967A25E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
+    <instance objName="obj_levelend_straight" x="576" y="0" name="inst_A538E221" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_levelend_corner" x="2944" y="1952" name="inst_6DE436FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_levelend_corner" x="64" y="1952" name="inst_AA7B136E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_levelend_straight" x="0" y="1824" name="inst_1B689F30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_levelend_straight" x="0" y="1696" name="inst_DA897056" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_levelend_straight" x="0" y="1568" name="inst_A9397C92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_levelend_straight" x="192" y="2016" name="inst_53C6AB40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_levelend_straight" x="320" y="2016" name="inst_F76A7DD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_levelend_straight" x="448" y="2016" name="inst_6D3A87F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_levelend_straight" x="704" y="2016" name="inst_5C988E38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_levelend_straight" x="576" y="2016" name="inst_21CA15AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_levelend_straight" x="832" y="2016" name="inst_58975A74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_levelend_straight" x="960" y="2016" name="inst_B5DF33F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
