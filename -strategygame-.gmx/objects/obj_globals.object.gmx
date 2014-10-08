@@ -39,6 +39,7 @@ if room == (rm_level1) {
    instance_create (x, y, obj_menubutton);
    instance_create (x, y, obj_tech_tree_kepler);
    instance_create (x, y, obj_tech_tree_terran);
+   instance_create(view_wview[0] - 20,view_hview[0] - 20, obj_menu_building_1);
 }
 
 //variables
@@ -183,10 +184,12 @@ talenttree == true then {
             <string>///intialize gui
 if playlevel == true then {
     obj_gui_base.visible = true;
+    obj_menu_building_1.visible = false;
     playlevel = false;
     
 } else if playlevel == false then {
     obj_gui_base.visible = false;
+    obj_menu_building_1.visible = true;
     playlevel = true;
 }
 

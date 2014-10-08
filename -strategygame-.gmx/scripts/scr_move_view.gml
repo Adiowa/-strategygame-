@@ -9,19 +9,19 @@ var movecamdown = keyboard_check(vk_down) || keyboard_check(ord("S"))
 
 
 //move
-if (movecamright) {
+if (movecamright && view_xview[0] < 1200) {
     view_xview[0] += 10
 }
 
-if (movecamleft) {
+if (movecamleft && view_xview[0] > 0) {
     view_xview[0] -= 10
 }
 
-if (movecamup) {
+if (movecamup && view_yview[0] > 0) {
     view_yview[0] -= 10
 }
 
-if (movecamdown) {
+if (movecamdown && view_yview[0] < 1000) {
     view_yview[0] += 10
 }
 
