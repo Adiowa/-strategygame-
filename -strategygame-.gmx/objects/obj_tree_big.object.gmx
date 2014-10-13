@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_index = randomize()
+            <string>image_index = choose (0,1,2);
+image_speed = 0;
 scr_find_depth();
 </string>
           </argument>
