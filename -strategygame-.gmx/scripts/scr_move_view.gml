@@ -9,11 +9,11 @@ var movecamdown = keyboard_check(vk_down) || keyboard_check(ord("S"))
 
 
 //move
-if (movecamright && view_xview[0] < 1200) {
+if (movecamright && view_xview[0] > 0) {
     view_xview[0] += 10
 }
 
-if (movecamleft && view_xview[0] > 0) {
+if (movecamleft && view_xview[0] < 1000) {
     view_xview[0] -= 10
 }
 
@@ -28,14 +28,14 @@ if (movecamdown && view_yview[0] < 1000) {
 //Create:
 view_pan_speed=10
 //Step:
-if mouse_x<=view_xview
+if (mouse_x<=view_xview && view_xview[0] > 0)
 view_xview-=view_pan_speed
 
-if mouse_x>=view_xview+view_wview - 10
+if (mouse_x>=view_xview+view_wview - 10 && view_xview[0] < 1000)
 view_xview+=view_pan_speed
 
-if mouse_y<=view_yview
+if (mouse_y<=view_yview && view_yview[0] > 0)
 view_yview-=view_pan_speed
 
-if mouse_y>=view_yview+view_hview
+if (mouse_y>=view_yview+view_hview && view_yview[0] < 1008)
 view_yview+=view_pan_speed

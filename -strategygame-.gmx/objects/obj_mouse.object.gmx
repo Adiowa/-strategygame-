@@ -26,7 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>///init some variables
-scr_find_depth_gui_super();
 press_x = -1;
 press_y = -1;
 </string>

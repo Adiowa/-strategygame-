@@ -3,7 +3,7 @@
   <spriteName>spr_exitbutton</spriteName>
   <solid>0</solid>
   <visible>0</visible>
-  <depth>1</depth>
+  <depth>-2</depth>
   <persistent>0</persistent>
   <parentName>obj_esc_menu</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_find_depth_gui_super();
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
