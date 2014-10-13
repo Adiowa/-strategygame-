@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>obj_terran_building_parent</parentName>
+  <parentName>obj_menu_text</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="6" enumb="53">
