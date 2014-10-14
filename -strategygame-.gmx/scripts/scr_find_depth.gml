@@ -1,3 +1,3 @@
 {
-depth = y*-2;
+depth = -y;
 }
