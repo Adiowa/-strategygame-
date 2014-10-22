@@ -35,8 +35,6 @@ if room == (rm_level1) {
    instance_create (x, y, obj_countup_controller) 
    instance_create (x, y, obj_view);
     instance_create (x, y, obj_esc_menu);
-   instance_create (x, y, obj_exitbutton);
-   instance_create (x, y, obj_menubutton);
    instance_create (x, y, obj_tech_tree_kepler);
    instance_create (x, y, obj_tech_tree_terran);
    instance_create (x, y, obj_menu_building_1);
