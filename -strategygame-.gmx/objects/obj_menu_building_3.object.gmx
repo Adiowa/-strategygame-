@@ -50,7 +50,7 @@ y=view_yview[0]+903;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(mouse_x == clamp(mouse_x, view_xview[0]+1623, view_xview[0]+1623 + 124) &amp;&amp; mouse_y = clamp(mouse_y, view_yview[0] + 903,  view_yview[0] + 903 + 124)){
+            <string>if(mouse_x == clamp(mouse_x, view_xview[0]+1774, view_xview[0]+1774 + 124) &amp;&amp; mouse_y = clamp(mouse_y, view_yview[0] + 903,  view_yview[0] + 903 + 124)){
     var build = instance_create(mouse_x, mouse_y, obj_hub_terran);
     build.selectedForBuilding = true;
 }
