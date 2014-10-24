@@ -54,8 +54,8 @@ buildingselect = false;
 //gimmick, press + and -
 zoom_factor = 1;
 //resources
-player_blob = 0;
-enemy_blob = 0;
+player_resource = 0;
+enemy_resource = 0;
 
 </string>
           </argument>
