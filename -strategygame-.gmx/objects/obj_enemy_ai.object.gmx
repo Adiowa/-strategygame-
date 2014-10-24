@@ -2,12 +2,40 @@
 <object>
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>barrack = false;
+towers = 0;
+
+spec = 0;
+air = 0;
+ground = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,59 +53,36 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*x=view_xview[0]+960;
-y=view_yview[0]+540;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="53">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(mouse_x == clamp(mouse_x, x - 32, x + 32) &amp;&amp; mouse_y = clamp(mouse_y, y + 100 + 16, y + 100 - 16)){
-    show_message("hi");
-    game_end();
+            <string>if( barrack == false){
+    if(obj_globals.enemy_resource &gt;= 10){
+        obj_globals.enemy_resource -= 10;
+        instance_create(x + 100, y + 100, obj_kepler_barrack);
+        barrack = true;
+    }
+}else if( towers &lt; 5 ){
+    if(obj_globals.enemy_resource &gt;= 5){
+        obj_globals.enemy_resource -= 5;
+        towers++;
+        switch (towers){
+            case 1:
+                instance_create(x - 200, y - 200, obj_kepler_barrack);
+                break;
+            case 2:
+                instance_create(x + 200, y - 200, obj_kepler_barrack)
+                break;
+            case 3:
+                instance_create(x - 200, y + 200, obj_kepler_barrack);
+                break;
+            case 4: 
+                instance_create(x + 200, y + 200, obj_kepler_barrack);
+                break;
+        }
+    }
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_sprite(spr_esc_menu,image_index,x,y);
-draw_sprite(spr_exitbutton,image_index,x ,y + 100);
-draw_sprite(spr_menubutton,image_index,x,y);
+
+if(barrack = true){
+
+}
 </string>
           </argument>
         </arguments>
@@ -95,8 +100,5 @@ draw_sprite(spr_menubutton,image_index,x,y);
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints>
-    <point>150,250</point>
-    <point>250,250</point>
-  </PhysicsShapePoints>
+  <PhysicsShapePoints/>
 </object>

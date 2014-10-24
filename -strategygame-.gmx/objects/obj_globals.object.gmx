@@ -40,6 +40,8 @@ if room == (rm_level1) {
    instance_create (x, y, obj_menu_building_1);
    instance_create (x, y, obj_menu_building_2);
    instance_create (x, y, obj_menu_building_3);
+   instance_create (1000, 1000, obj_enemy_ai);
+   instance_create (1000, 1000, obj_kepler_hub);
 }
 cursor_sprite = spr_mouse;
 //variables
@@ -121,8 +123,8 @@ view_hview[0] = 1080 * (zoom_factor);
           <argument>
             <kind>1</kind>
             <string>///give resources every frame
-player_blob += 1/room_speed
-enemy_blob += 1/room_speed
+player_resource += 1/room_speed
+enemy_resource += 1/room_speed
 </string>
           </argument>
         </arguments>
