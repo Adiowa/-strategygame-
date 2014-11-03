@@ -31,6 +31,8 @@ towers = 0;
 spec = 0;
 air = 0;
 ground = 0;
+
+var barrackBuilding;
 </string>
           </argument>
         </arguments>
@@ -56,7 +58,7 @@ ground = 0;
             <string>if( barrack == false){
     if(obj_globals.enemy_resource &gt;= 10){
         obj_globals.enemy_resource -= 10;
-        instance_create(x + 100, y + 100, obj_kepler_barrack);
+        barrackBuilding = instance_create(x + 100, y + 100, obj_kepler_barrack);
         barrack = true;
     }
 }else if( towers &lt; 5 ){
@@ -65,23 +67,27 @@ ground = 0;
         towers++;
         switch (towers){
             case 1:
-                instance_create(x - 200, y - 200, obj_kepler_barrack);
+                instance_create(x - 200, y - 200, obj_kepler_tower);
                 break;
             case 2:
-                instance_create(x + 200, y - 200, obj_kepler_barrack)
+                instance_create(x + 200, y - 200, obj_kepler_tower)
                 break;
             case 3:
-                instance_create(x - 200, y + 200, obj_kepler_barrack);
+                if(ground &gt; 0)instance_create(x - 200, y + 200, obj_kepler_tower);
                 break;
             case 4: 
-                instance_create(x + 200, y + 200, obj_kepler_barrack);
+                if(ground &gt; 2 &amp;&amp; spec &gt; 1)instance_create(x + 200, y + 200, obj_kepler_tower);
                 break;
         }
     }
 }
 
 if(barrack = true){
-
+    if(obj_globals.enemy_resource &gt;= 7){
+        ground++;
+        instance_create(barrackBuilding.x + 50, barrackBuilding.y + 50, obj_kepler_ground);
+        obj_globals.enemy_resource -= 7;
+    }
 }
 </string>
           </argument>

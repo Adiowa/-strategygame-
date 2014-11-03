@@ -49,8 +49,7 @@ y=view_yview[0]+540;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(mouse_x == clamp(mouse_x, x - 32, x + 32) &amp;&amp; mouse_y = clamp(mouse_y, y + 100 + 16, y + 100 - 16)){
-    show_message("hi");
+            <string>if(mouse_x == clamp(mouse_x, view_xview[0] + 560 - 32, view_xview[0] + 560 + 32) &amp;&amp; mouse_y == clamp(mouse_y, view_yview[0] + 700 - 16, view_yview[0] + 700 + 16)){
     game_end();
 }
 </string>
